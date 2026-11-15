@@ -257,7 +257,7 @@ mixed([["in ",0],[tt,1]],846,36);
 return cv}
 function drawCard(x,m,cx,cy,w,hh,lg){var s=w/377,hs=house(m.h),t=m.n.toUpperCase(),mw=w-146*s,fs=17*s;x.save();x.textBaseline="alphabetic";x.textAlign="left";x.strokeStyle="#0f7a52";x.lineWidth=2*s;rr(x,cx,cy,w,hh,12*s);x.stroke();
 x.save();rr(x,cx,cy,w,hh,12*s);x.clip();var g=x.createLinearGradient(cx,0,cx+w,0);g.addColorStop(0,"#0b5d3f");g.addColorStop(1,"#0f8a56");x.fillStyle=g;x.fillRect(cx,cy,w,42*s);x.restore();
-if(lg)x.drawImage(lg,cx+8*s,cy+5*s,36*s,32*s);x.fillStyle="#fff";x.font="700 "+(14*s)+"px "+FB;x.fillText(S.ev.venue||"",cx+52*s,cy+19*s);x.font="500 "+(12*s)+"px "+FB;if(!wmDraw(x,"#fff",cx+52*s,cy+22*s,15*s)){x.fillText(S.ev.name,cx+52*s,cy+34*s)}
+if(lg)x.drawImage(lg,cx+8*s,cy+5*s,36*s,32*s);x.fillStyle="#fff";if(!wmDraw(x,"#fff",cx+52*s,cy+8*s,26*s)){x.font="700 "+(18*s)+"px "+FB;x.fillText(S.ev.name,cx+52*s,cy+29*s)}
 drawQR(x,m.no,cx+12*s,cy+54*s,112*s);
 x.fillStyle="#0f7a52";x.font="700 "+(40*s)+"px "+FD;x.fillText(m.no,cx+134*s,cy+98*s);
 x.fillStyle="#111";do{x.font="700 "+fs+"px "+FB;fs-=1}while(x.measureText(t).width>mw&&fs>7*s);x.fillText(t,cx+134*s,cy+124*s);
